@@ -13,6 +13,8 @@ public class Player : MonoBehaviour
     private bool m_busy = false;
     private float m_movement = 0.0f;
 
+    private InteractableNPC m_currentNPCTarget = null;
+
     private void Start()
     {
         m_animator = GetComponent<Animator>();
@@ -42,10 +44,14 @@ public class Player : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E) && m_onInteractRange)
         {
-            m_busy = true;
-            //DialogManager.instance.InitializeDialog();
-            DialogManager.instance.Display();
+            SetPlayerBusy(true);
+            m_currentNPCTarget.Interact();
         }
+    }
+
+    public void SetPlayerBusy(bool isBusy)
+    {
+        m_busy = isBusy;
     }
 
     private void UpdateAnimator()
@@ -60,8 +66,9 @@ public class Player : MonoBehaviour
         }
     }
 
-    public void OnInteractRange(bool onInteractRange)
+    public void OnInteractRange(bool onInteractRange, InteractableNPC target)
     {
         m_onInteractRange = onInteractRange;
+        m_currentNPCTarget = target;
     }
 }

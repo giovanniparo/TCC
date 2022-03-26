@@ -4,14 +4,13 @@ using UnityEngine;
 
 public class Dialogbox : MonoBehaviour
 {
-    private void Awake()
+    public void Show()
     {
-        this.gameObject.SetActive(false);
+        this.gameObject.SetActive(true);
     }
 
-    public void ShowDialogbox()
+    public void Hide()
     {
-        
-        this.gameObject.SetActive(true);
+        this.gameObject.SetActive(false);
     }
 }

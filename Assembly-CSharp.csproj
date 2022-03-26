@@ -102,8 +102,15 @@
     <Compile Include="Assets\Scripts\DialogObject.cs" />
     <Compile Include="Assets\Scripts\Dialogbox.cs" />
     <Compile Include="Assets\Scripts\EmoteManager.cs" />
+    <Compile Include="Assets\Scripts\FlexibleGridLayout.cs" />
     <Compile Include="Assets\Scripts\InteractableNPC.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
+    <Compile Include="Assets\Scripts\RecipeBookManager.cs" />
+    <Compile Include="Assets\Scripts\RecipeObject.cs" />
+    <Compile Include="Assets\Scripts\RecipeUI.cs" />
+    <Compile Include="Assets\Scripts\SelectMenu.cs" />
+    <Compile Include="Assets\Scripts\SelectMenuOptions.cs" />
+    <Compile Include="Assets\Scripts\Selector.cs" />
     <None Include="Assets\Sprites\GothicvaniaFiles\GothicVania-town-files\public-license.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
